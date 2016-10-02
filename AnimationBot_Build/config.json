@@ -1,0 +1,11 @@
+{
+  "irc": [
+    {
+      "url": "irc.twitch.tv",
+      "NICK": "",
+      "PASS": "oauth:",
+      "CHANNEL": "#",
+      "SOCKET": 6667
+    }
+  ]
+}
