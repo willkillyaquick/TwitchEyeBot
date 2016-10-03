@@ -2,9 +2,9 @@
   "irc": [
     {
       "url": "irc.twitch.tv",
-      "NICK": "",
-      "PASS": "oauth:",
-      "CHANNEL": "#",
+      "NICK": "quackrBot",
+      "PASS": "oauth:qjh6ranakojgh4c4h0d3ja2urqzkwj",
+      "CHANNEL": "#willkillyaquick",
       "SOCKET": 6667
     }
   ]
