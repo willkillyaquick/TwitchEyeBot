@@ -13,6 +13,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import bot.IRCbot;
+import configs.UserConfigs;
 
 
 public class TwitchImageJSON {
@@ -21,7 +22,7 @@ public class TwitchImageJSON {
 	public TwitchImageJSON() {
 		InputStream is = null;
 		try {
-			is = new URL("https://api.twitch.tv/kraken/chat/emoticon_images").openStream();
+			is = new URL(UserConfigs.url() + "?client_id=" + UserConfigs.key()).openStream();
 			BufferedReader rd = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
 			String jsonText = readAll(rd);
 			json = new JSONObject(jsonText);
